@@ -1,0 +1,123 @@
+:root{
+    --color-one: white;
+    --color-two: black;
+}
+body{
+    background-color: var(--color-two);
+    margin: 0px;
+}
+.content{
+    margin: 40px;
+}
+.row {
+    display: flex;
+    max-width: 1300px;
+    position: center;
+}
+.column {
+    flex: 50%;
+    position: center;
+    
+}
+img {
+    width: 500px;
+    height: 90%;
+    box-shadow: 0 0 15px 2px #7f7f7f;
+    margin: 40px;
+    border-radius: 10px;
+}
+p {
+    font-size: 24px;
+}
+h1 {
+    font-size: 28px;
+}
+.text {
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    color: var(--color-one);
+    text-align: justify;
+    text-shadow: 0px 0px 3px #aaaaaa;
+}
+#darkModeToggle{
+    user-select: none;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: var(--color-one);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px #7f7f7f;
+    float: left;
+    font-size: 14px;
+    margin: 20px;
+}
+.bottom-navbar {
+    position: center;
+    margin: 40px;
+}
+hr {
+    box-shadow: 0 0px 5px 0px #7f7f7f;
+    color: var(--color-one);
+    height: 2px;
+    width: 100%;
+    position: center;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: var(--color-one);
+    
+}
+#JSPrompt{
+    font-size: 80px;
+    background-color: white;
+    color: red;
+}
+#Copyright{
+    float: left;
+    margin: 20px;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    padding: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 100%;
+        flex: 100%;
+    }
+    .row {
+        display: inline-block;
+        position: center;
+    }
+    p {
+        font-size: 16px;
+    } 
+    h1 {
+        font-size: 20px;
+    }
+    img {
+        width: calc(100% - 80px);
+        height: calc(100% - 80px);
+        position: center; 
+    }
+    .content{
+        display: inline-block;
+        margin: 40px;
+        width: calc(100% - 80px);
+    }
+    #Copyright{
+        margin: 10px;
+        height: 40px;
+        font-size: 12px;
+        padding: 13px;
+    }
+    #darkModeToggle {
+        margin: 10px;
+        height: 40px;
+        width: 156px;
+        font-size: 12px;
+    }
+    
+}
