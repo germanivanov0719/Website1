@@ -5,6 +5,7 @@
 body{
     background-color: var(--color-two);
     margin: 0px;
+    padding: 0px;
 }
 .content{
     margin: 40px;
@@ -35,7 +36,6 @@ h1 {
 .text {
     font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
     color: var(--color-one);
-    text-align: justify;
     text-shadow: 0px 0px 3px #aaaaaa;
 }
 #darkModeToggle{
@@ -82,13 +82,15 @@ hr {
     padding: 18px;
 }
 #Beta{
-    width: 100%;
+    width: calc(100% - 40px);
     height: 22px;
     text-align: center;
     background-color: #c0902a3d;
     margin-bottom: 15px;
     font-size: 16px;
     text-shadow: 0 0 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #Copyright{
     float: right;
@@ -106,6 +108,7 @@ hr {
     .row {
         display: inline-block;
         position: center;
+        margin-bottom: 0px;
     }
     p {
         font-size: 16px;
@@ -135,5 +138,18 @@ hr {
         width: 156px;
         font-size: 12px;
     }
-    
+    #FirstParagraph {
+        margin-bottom: 0px;
+    }
+    #OtherParagraphs{
+        margin-top: 0px;;
+    }
+    #Paragraph2{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 655px) {
+    #Beta{
+        height: 44px;
+    }
 }
