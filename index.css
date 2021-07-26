@@ -95,7 +95,7 @@ hr {
     padding-right: 20px;
 }
 #Copyright{
-    float: right;
+    margin-left: auto;
 }
 #Email{
     font-style: 0;
@@ -161,9 +161,14 @@ hr {
     #Beta{
         height: 44px;
     }
+    #darkModeToggle {
+        width: 70px;
+        margin: 10px 5px 5px 5px;
+        font-size: 10px;
+    }
     .Copyright {
         font-size: 10px;
         margin: 5px;
-        padding: 18px 0 5px 0;
+        padding: 18px 0 0 0;
     }
 }
