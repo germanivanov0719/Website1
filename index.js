@@ -1,5 +1,12 @@
-let darkEnabled = false;
-darkModeToggle()
+let darkEnabled = true;
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    darkEnabled = false;
+    darkModeToggle();
+}
+else {
+    darkModeToggle();
+}
+
 
 function darkModeToggle() {
     console.log("Previous dark: ", darkEnabled, "\nSwitching the Mode...");
